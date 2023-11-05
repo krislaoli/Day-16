@@ -1,0 +1,8 @@
+//input 1 id items 
+INSERT INTO public."Projects"(author, title, "createdAt", "updatedAt")
+	VALUES (14, 'yasdasfdas', '2023-10-21 10:15:01.680481+07', '2023-10-21 10:15:01.680481+07');
+
+
+// untuk input id item 2 sekaligus
+INSERT INTO public."Projects"(author, title, "createdAt", "updatedAt")
+	VALUES (14, 'yasdasfdas', '2023-10-21 10:15:01.680481+07', '2023-10-21 10:15:01.680481+07'), (13, 'Ucok', '2023-10-21 10:15:01.680481+07', '2023-10-21 10:15:01.680481+07');

@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Jockey+One&display=swap");
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-collapse .nav-link {
+  font-family: Jockey One;
+  size: 20px;
+}
+.buttom-contact-nav {
+  font-family: Jockey One !important;
+  font-size: 15px !important;
+  /* text-align: center !important;
+  display: block !important;
+  margin: auto !important; */
+}
+
+.bg-color {
+  background-color: #004225 !important;
+}
+
+.container a img {
+  width: 50px !important;
+}
+
+.nav-active-item .nav-active {
+  color: orangered !important;
+  text-shadow: 1px 1px 1px black !important;
+}
+
+.container a img:hover {
+  transform: rotate(360deg) scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
+.container .navbar-collapse {
+  text-align: center;
+}
+
+.container .navbar.toggler {
+  background-color: #8800ff;
+}
+
+.buttom-contact-nav {
+  border: 3px solid black;
+}
+
+.container .buttom-contact-nav {
+  background-color: yellow;
+}
+
+.container .buttom-contact-nav:hover {
+  background-color: #eff5d2;
+  color: #000000;
+  border: 3px solid black;
+  transition: all 0.5s ease-in-out;
+}

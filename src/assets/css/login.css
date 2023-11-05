@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viga&display=swap');
+
+.card-title {
+  font-family: Bungee;
+}
+
+.mb-3 {
+  position: relative;
+}
+
+.show-password-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  /* Sesuaikan dengan jarak dari input element */
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.buttom-contact-nav {
+  font-family: Jockey One !important;
+  font-size: 15px !important;
+  text-align: center !important;
+  display: block !important;
+  margin: auto !important;
+}
+
+.button-submit {
+  color: yellow;
+  font-weight: bold;
+  background-color: black !important;
+  font-size: 20px;
+  font-family: Viga;
+  letter-spacing: 1px;
+}

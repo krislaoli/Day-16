@@ -1,0 +1,102 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Web</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body style="background-color:thistle; background-image: url('https://images2.alphacoders.com/242/2420.png');">
+    <!-- navbar-content -->
+    <nav class="navbar navbar-expand-lg" style="background-color: orangered; background-image: url('https://i.pinimg.com/originals/3f/fe/5d/3ffe5ddb67ae12e1103e84e77f78a0db.jpg');">
+      <div class="container">
+        <a class="navbar-brand" href="#"><img
+            src="/images/uchiha.PNG"
+            id=""
+            alt="#"
+            width="50"
+            height="45"
+          />
+        </a>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item fw-bold ms-3">
+              <a class="nav-link active text-white" aria-current="page" href="/">
+                Home
+              </a>
+            </li>
+
+            {{#if isLogin}}
+            <li class="nav-item fw-bold ms-3">
+              <a class="nav-link active text-white" href="/blog">
+                Add Project
+              </a>
+            </li>
+            {{/if}}
+          </ul>
+          <div class="d-flex">
+              <ul class="navbar-nav me-auto mb-4 ms-5 mb-lg-0 fw-bold">
+                <li class="nav-item">
+                    <a class="nav-link active mx-auto text-white" style="width: 90px;" href="/register">
+                        Register
+                    </a>
+                </li>
+                <li class="nav-item fw-bold ms-3">
+                    <a class="nav-link text-white"  style="width: 100px;" href="/login">
+                        Login
+                    </a>
+                </li>
+              </ul>
+            <a
+              class="btn fw-bold text-black rounded-pill"
+              style="background-color: rgb(184, 184, 182);"
+              type="submit"
+              href="/contact"
+              >Contact Me
+            </a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+ {{!-- menampilkan pesan erorr maupun su --}}
+    {{#if messages.danger}}
+      <div class="alert alert-danger" role="alert">
+        <div class="container">
+          {{messages.danger}}
+        </div>
+      </div>
+    {{/if}}
+
+    <div class="container d-flex justify-content-center">
+      <div class="w-50">
+        <h3 class="text-center mt-5">LOGIN</h3>
+        <form action="/login" method="post">
+          <div class="mb-3">
+            <label for="email" class="form-label fw-bold">Email</label>
+            <input type="email" name="email" class="form-control" id="email" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label fw-bold">Password</label>
+            <input type="password" class="form-control" name="password" id="password">
+          </div>
+          <button type="submit" class="btn btn-dark rounded-pill mt-3 px-5">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

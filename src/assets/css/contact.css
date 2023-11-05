@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap");
+
+body {
+    background-color: #132043;
+}
+
+section {
+    background-color: #f99417;
+}
+
+.container-fluid {
+    background-color: #8b8b8b;
+}
+
+.container-form {
+    width: 550px;
+}
+
+.container-form textarea {
+    resize: none;
+}
+
+.container-form .btn:hover {
+    background-color: black !important;
+    color: rgb(0, 0, 0);
+    border: none;
+    transition: all 0.2s ease-in-out;
+
+    .button-submit {
+        color: black !important;
+    }
+}
+
+.button-submit {
+    color: black;
+    font-weight: bold;
+    color: black;
+    background-color: yellow !important;
+}

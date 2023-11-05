@@ -1,0 +1,147 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testimonial</title>
+    <link
+      rel="shorcut icon"
+      type="icon"
+      href="/images/logo-website.png"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/testimonial.css" />
+  </head>
+  <body style="background-image: url('/images/background-1.jpg')">
+  
+    <nav
+      id="navigation"
+      class="navbar bg-color sticky-top navbar-inverse navbar-expand-lg shadow"
+    >
+      <div class="container">
+        <a href="" class="me-4">
+          <img src="/images/logo-website.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggle"
+          aria-control="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-active-item" id="navbarToggle">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link fs-5 text-light"
+                aria-current="page"
+                href="/"
+              >Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-5 text-light"
+                aria-current="page"
+                href="/blog"
+              >Blog</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link fs-5 text-light nav-active"
+                aria-current="page"
+                href="/testimonial"
+              >Testimonial</a>
+            </li>
+          </ul>
+          <a
+            class="buttom-contact-nav btn fs-6 fw-medium text-dark"
+            href="/contact"
+          >Contact Me</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-rating">
+      <h1 class="text-body">My Testimonial</h1>
+      <div class="container-star">
+        <h2>Rating By Star</h2>
+        <div class="rating-star">
+          <button
+            class="star-button-all start-name"
+            value="0"
+            onclick="getAllTestimonials()"
+          >
+            All Star
+            <i class="start-name-title fa-solid fa-star"></i>
+          </button>
+          <button
+            class="star-button-1 star-number"
+            value="1"
+            onclick="getFilteredTestimonials(1)"
+          >
+            1
+            <i class="star-effect fa-solid fa-star"></i>
+          </button>
+          <button
+            class="star-button-2 star-number"
+            value="2"
+            onclick="getFilteredTestimonials(2)"
+          >
+            2
+            <i class="star-effect fa-solid fa-star"></i>
+          </button>
+          <button
+            class="star-button-3 star-number"
+            value="3"
+            onclick="getFilteredTestimonials(3)"
+          >
+            3
+            <i class="star-effect fa-solid fa-star"></i>
+          </button>
+          <button
+            class="star-button-4 star-number"
+            value="4"
+            onclick="getFilteredTestimonials(4)"
+          >
+            4
+            <i class="star-effect fa-solid fa-star"></i>
+          </button>
+          <button
+            class="star-button-5 star-number"
+            value="5"
+            onclick="getFilteredTestimonials(5)"
+          >
+            5
+            <i class="star-effect fa-solid fa-star"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <section class="testimonials" id="testimonials"></section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="js/testimonial.js"></script> -->
+    <script src="/js/testimonial.js"></script>
+    <script src="/js/navbar.js"></script>
+  </body>
+</html>

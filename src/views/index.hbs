@@ -1,0 +1,387 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shorcut icon" type="icon" href="/images/logo-website.png" />
+    <title>Index</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+
+    {{! font family }}
+    <style>
+      @import
+      url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+      @import
+      url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+    </style>
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/index.css" />
+  </head>
+  <body>
+
+    <nav
+      id="navigation"
+      class="navbar bg-color sticky-top navbar-inverse navbar-expand-lg shadow"
+    >
+      <div class="container">
+        <a href="" class="me-4">
+          <img src="/images/logo-website.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarToggle"
+          aria-control="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse nav-active-item" id="navbarToggle">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link fs-5 text-light nav-active"
+                aria-current="page"
+                href="/"
+              >Home</a>
+            </li>
+            {{#if isLogin}}
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-5 text-light"
+                  aria-current="page"
+                  href="/blog"
+                >Blog</a>
+              </li>
+            {{/if}}
+            {{#if isLogin}}
+              <li class="nav-item">
+                <a
+                  class="nav-link fs-5 text-light"
+                  aria-current="page"
+                  href="/testimonial"
+                >Testimonial</a>
+              </li>
+            {{/if}}
+          </ul>
+          <div class="d-flex">
+            <ul class="navbar-nav me-auto mb-4 ms-5 mb-lg-0">
+              {{#if isLogin}}
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-5 text-light"
+                    aria-current="page"
+                    href="#"
+                  >
+                    Hello,
+                    {{user}}
+                  </a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a
+                    class="nav-link fs-5 text-light"
+                    aria-current="page"
+                    href="/logout"
+                  >
+                    Log Out
+                  </a>
+                </li>
+              {{else}}
+                <li class="nav-item">
+                  <a
+                    class="nav-link fs-5 text-light"
+                    aria-current="page"
+                    href="/register"
+                  >
+                    Register
+                    {{dataBlog.isLogin}}
+                  </a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a
+                    class="nav-link fs-5 text-light"
+                    aria-current="page"
+                    href="/login"
+                  >
+                    Login
+                  </a>
+                </li>
+              {{/if}}
+
+            </ul>
+            <a
+              class="buttom-contact-nav btn fs-7 fw-medium text-dark"
+              href="/contact"
+            >Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+ 
+    {{#if messages.success}}
+      <div class="alert alert-success" role="alert">
+        <div class="container">
+          {{messages.success}}
+        </div>
+      </div>
+    {{/if}}
+
+    <!-- content section -->
+    <div class="container-card d-flex">
+      <div
+        class="card container-card-content d-flex align-items-center justify-content-center"
+      >
+        <div class="card-list-content d-flex flex-row p-5">
+          <div class="card-body card-body-text p-0">
+            <h2 class="card-title">Hey Broh, Your Wellcome is My Web</h2>
+            <p class="card-text pe-4 mt-4">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis debitis, iusto quaerat explicabo, nisi, ipsam illum
+              porro consequuntur adipisci voluptates distinctio maiores mollitia
+              nam consequatur! Quibusdam dignissimos quasi a blanditiis. Lorem,
+              ipsum dolor sit amet consectetur adipisicing elit. Rem ipsam
+              cupiditate quae pariatur autem amet, assumenda sequi nesciunt ea
+              excepturi! Debitis aspernatur consectetur repudiandae voluptatem
+              repellendus cumque quas mollitia sequi. Dignissimos eaque deleniti
+              aut ab, voluptatibus porro odio voluptatem soluta.
+            </p>
+
+            <div
+              class="card-content-list d-flex flex-sm-row align-items-center mt-5"
+            >
+              <button
+                class="btn btn-dark ps-2 pe-2 me-4"
+                style="background-color:black"
+              >
+                <a
+                  class="fs-6 fw-bolder"
+                  style="color:bisque; text-decoration: none; border-radius: 10px;"
+                  href="/contact"
+                >
+                  Contact
+                </a>
+              </button>
+
+              <a class="text-dark fs-6 fw-bolder" href="#">Download CV
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 34 32"
+                  stroke-width="1.2"
+                  stroke="currentColor"
+                  width="30px"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3 16.5v2.25A2.25 2.25 0 005.25 21h13.5A2.25 2.25 0 0021 18.75V16.5M16.5 12L12 16.5m0 0L7.5 12m4.5 4.5V3"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div
+            class="card card-profile d-flex align-items-center justify-content-center rounded-3 shadow"
+          >
+            <img
+              class="card-img-top rounded-top-3"
+              src="https://i.pinimg.com/originals/13/70/82/137082125645e4193cf65978c8728ae6.gif"
+              alt="card-photo"
+            />
+            <div class="card-body rounded-3">
+              <h3
+                class="card-title card-title-profile fs-5 fw-bolder text-center"
+              >
+                M. Kristian Laoli
+              </h3>
+              <p class="text-card fs-5 text-center">Beginer Fullstack</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="my-project-container">
+      <h2
+        class="text-center fw-bold pb-1 pt-5"
+        style="font-family: Kelly Slab; letter-spacing: 2px; text-shadow: 0px 0px 1px rgb(0, 0, 0); color: black;"
+      >My Project</h2>
+      <div
+        class="flex-wrap card-content gap-4 p-5 d-flex align-items-center justify-content-center"
+      >
+        {{#each dataBlog}}
+          <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+            <div class="card card-my-project">
+              <div class="card-body rounded-3 shadow">
+                <img
+                  style="position: relative;"
+                  class="card-img-top rounded-3"
+                  src="/{{this.images}}"
+                  alt="test"
+                  name="cardImg"
+                />
+
+                <p
+                  class="card-duration mt-3 fw-bold author-name-overlay position: relative;"
+                  style="font-size: 14px;"
+                >
+                  <i
+                    class="fa-solid fa-circle-user"
+                    style="color: #000000;"
+                  ></i>
+                  {{this.author_name}}
+                </p>
+
+                <div class="duration-project">
+                  <div class="d-flex flex-wrap justify-content-between">
+                    <div>
+                      <p
+                        class="author-name text-start"
+                        style="font-family: 'PT Sans', sans-serif;"
+                      >
+                        Start :
+                        {{this.startDate}}
+                      </p>
+                    </div>
+                    <p
+                      class="author-name text-end"
+                      style="font-family: 'PT Sans', sans-serif;"
+                    >
+                      End :
+                      {{this.endDate}}
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-between">
+                </div>
+                <a
+                  href="/blog-detail/{{this.id}}"
+                  class="fs-5 content-title"
+                >{{this.title}}</a>
+                <p class="scrolltable" style="overflow: auto">
+                  {{this.content}}
+                </p>
+                <div class="d-flex gap-3 mb-3" style="font-size: 1.6rem;">
+                  {{#if this.nodejs}}
+                    <i class="fab fa-node-js"></i>
+                  {{/if}}
+                  {{#if this.js}}
+                    <i class="fab fa-js"></i>
+                  {{/if}}
+                  {{#if this.reactjs}}
+                    <i class="fab fa-react"></i>
+                  {{/if}}
+                  {{#if this.vuejs}}
+                    <i class="fab fa-vuejs"></i>
+                  {{/if}}
+                </div>
+                <p class="card-time">
+                  <i><i
+                      class="fa-regular fa-hourglass-half fa-fade"
+                      style="color: #000000;"
+                    ></i>
+                    {{this.duration}}</i>
+                </p>
+                <div
+                  class="btn-group gap-3 d-flex flex-row justify-content-center p-2"
+                >
+                  {{#if isLogin}}
+                    <a
+                      href="/edit-blog/{{this.id}}"
+                      class="btn fw-bold button-edit-delete"
+                      style="background-color: yellow; font-size: 20px;"
+                    ><i class="fas fa-edit" style="margin-left: 5px;"></i></a>
+                    <a
+                      href="/delete-blog/{{this.id}}"
+                      class="btn fw-bold button-edit-delete"
+                      style="background-color: red; font-size: 20px; color:white;"
+                    ><i class="fas fa-trash" style="margin-left: 5px;"></i></a>
+                  {{/if}}
+                </div>
+              </div>
+            </div>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+
+    <footer class="card-footer-sosmed text-center text-white">
+      <!-- Grid container -->
+      <div class="container pt-3">
+        <!-- Section: Social media -->
+        <section class="mb-2">
+          <!-- Facebook -->
+          <a
+            class="btn-link btn-floating btn-lg text-dark m-lg-2"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+          ><i class="fab fa-lg fa-facebook-f"></i></a>
+
+          <!-- Twitter -->
+          <a
+            class="btn-link btn-floating btn-lg text-dark m-lg-2"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+          ><i class="fab fa-lg fa-twitter"></i></a>
+
+          <!-- Instagram -->
+          <a
+            class="btn-link btn-floating btn-lg text-dark m-lg-2"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+          ><i class="fab fa-lg fa-instagram"></i></a>
+
+          <!-- Linkedin -->
+          <a
+            class="btn-link btn-floating btn-lg text-dark m-lg-2"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+          ><i class="fab fa-lg fa-linkedin"></i></a>
+          <!-- Github -->
+          <a
+            class="btn-link btn-floating btn-lg text-dark m-1"
+            href="#!"
+            role="button"
+            data-mdb-ripple-color="dark"
+          ><i class="fab fa-lg fa-github"></i></a>
+        </section>
+        <!-- Section: Social media -->
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="card-copyright text-center text-white p-3">
+        © 2023 Copyright:
+        <a class="text-white text-decoration-none" href="#">Mei Kristian Laoli</a>
+      </div>
+      <!-- Copyright -->
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+
+  </body>
+
+</html>

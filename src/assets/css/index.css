@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fruktur&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Acme&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+
+* {
+  font-family: "Quicksand", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.author-name strong {
+  font-weight: bold;
+}
+
+.button-edit-delete {
+  width:
+    10rem !important;
+  height: 2rem !important;
+  border: 2px solid black;
+  border-radius: 10px !important;
+  font-size: 20px !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+.buttom-contact-nav {
+  font-family: Jockey One !important;
+  font-size: 15px !important;
+  text-align: center !important;
+  display: block !important;
+  margin: auto !important;
+}
+
+.container-card {
+
+  /* background-color: #FFF2D8 !important; */
+  background-image: url("https://www.wallpapertip.com/wmimgs/79-792058_lime-green-and-black-wallpaper-3-desktop-background.jpg");
+  background-size: cover;
+}
+
+.card-title {
+  font-family: Fruktur;
+}
+
+.card-title-profile {
+  font-family: "Archivo Black", sans-serif;
+}
+
+.card-text {
+  font-family: "Mukta", sans-serif;
+}
+
+.text-card {
+  font-family: "Acme", sans-serif;
+}
+
+/* landing page content */
+.card {
+  width: 100% !important;
+}
+
+.card .container-card,
+.card-body {
+  background-color: white;
+}
+
+.container-card .card-list-content .card-text {
+  text-align: justify !important;
+}
+
+.card .card-img-top {
+  width: 100%;
+}
+
+.card .card-profile {
+  width: 100%;
+}
+
+.container-card .container-card-content {
+  margin: 100px 100px !important;
+}
+
+.card .btn .text-light {
+  text-decoration: none !important;
+}
+
+.card .text-dark {
+  text-decoration: none !important;
+}
+
+.container-card .container-card-content .card-body-text .social-media .icon-sosmed:hover {
+  color: #ff0000 !important;
+  transform: scale(1.2);
+  transition: all 1s ease-in-out;
+}
+
+.container-card .container-card-content .card-profile:hover {
+  transform: scale(1.1);
+  transition: all 1s ease-in-out;
+}
+
+/* ============================================================================================== */
+/* my project content */
+
+.my-project-container {
+  background-color: #EAD7BB;
+}
+
+.author-name-overlay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: rgba(255, 255, 255, 0.7);
+  padding: 5px 10px;
+  z-index: 1;
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
+  color: black;
+}
+
+.my-project-container .card-content .card-my-project .card-body a {
+  text-decoration: none;
+  color: black;
+}
+
+.my-project-container .card .card-body img {
+  width: 100%;
+  height: 300px;
+  object-fit: fill;
+}
+
+.my-project-container .card .card-body .btn-edit {
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.content-title {
+
+  font-family: 'Kanit', sans-serif;
+}
+
+.my-project-container .card .card-body .btn-delete {
+  border: none;
+  background-color: rgb(255, 0, 0);
+  color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.scrolltable {
+  overflow: auto;
+  height: 50px;
+}
+
+.card-time {
+  font-family: Signika Negative !important;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+/* ==================================================================================================================================================== */
+/* footer */
+.card-footer-sosmed {
+  background-color: #BCA37F;
+}
+
+.card-copyright {
+  background-color: #113946;
+}
+
+@media only screen and (max-width: 900px) {
+
+  /* landing page */
+  .container-card .container-card-content .card-list-content {
+    width: 85% !important;
+    display: grid !important;
+    grid-row: 1 !important;
+  }
+
+  .card .card-profile {
+    width: 60% !important;
+    margin: 50px auto !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .container-card .container-card-content .card-body-text {
+    padding-top: 30px !important;
+  }
+
+  /* my project */
+
+  .my-project-container .card-content i {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+
+  /* landing page */
+  .container-card .container-card-content {
+    width: 100% !important;
+    margin: 10px 10px !important;
+  }
+
+  .container-card .container-card-content .card-list-content {
+    padding-top: 30px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .container-card .container-card-content .card-list-content h2 {
+    font-size: 100% !important;
+    padding-top: 10px !important;
+    margin: 0 !important;
+  }
+
+  .container-card .container-card-content .card-list-content .card-text {
+    padding: 0 !important;
+  }
+
+  .container-card .container-card-content .card-body-text {
+    padding-top: 0 !important;
+  }
+
+  .card .card-profile {
+    width: 100% !important;
+  }
+}

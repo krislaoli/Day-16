@@ -1,0 +1,195 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Slim&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Trochut:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
+/* font family end */
+
+body {
+    background-color: #363062;
+}
+
+.container-rating {
+    padding: 50px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+}
+
+.container-rating .container-star {
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    display: grid !important;
+    flex-direction: grid !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.text-body {
+    color: bisque;
+    font-family: Nabla;
+}
+
+h2 {
+    color: yellow;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    letter-spacing: 1px !important;
+}
+
+.container-rating .container-star h2 {
+    text-align: center ;
+}
+
+/* ============== */
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+    gap: 20px;
+}
+
+/* ============= */
+.container-star .rating-star button {
+    background-color: #451952;
+    border: 3px solid #FFB000;
+    color: black;
+    padding: 9px 20px;
+    border-radius: 7px;
+    margin: 10px;
+}
+
+.container-star .rating-star button:hover {
+    background-color: red;
+}
+
+.start-name {
+    font-family: 'Nova Slim', cursive;
+    font-weight: bold;
+    background-color: #FFD700 !important;
+    border: 3px solid black !important;
+    transition: transform 0.3s ease;
+}
+
+.start-name:active {
+    transform: translateY(5px);
+}
+
+.star-number {
+    font-weight: bold;
+    color: bisque !important;
+
+}
+
+.scroll-name {
+    text-overflow: ellipsis;
+    letter-spacing: 2px;
+}
+
+.star-number {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 2px 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.star-number:hover {
+    background-color: bisque;
+    transform: translateY(-5px);
+}
+
+.star-effect {
+    color: #FFD700;
+}
+
+.testimonial {
+    width: 25%;
+    margin: 0 15px 30px 15px;
+    padding: 20px;
+    background-color: bisque;
+}
+
+.testimonials .profile-testimonial {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.quote {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: justify;
+    font-family: 'Edu VIC WA NT Beginner', cursive;
+}
+
+.author {
+    font-weight: bold;
+    text-align: right;
+    font-size: 20px;
+    font-family: 'Trochut', cursive;
+}
+
+.not-found {
+    color: bisque;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.8);
+    font-family: 'Capriola', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+    .testimonial {
+        width: 40%;
+    }
+
+    .container-star {
+        max-width: 100%;
+    }
+
+    .star-number {
+        width: 10%;
+    }
+
+    .rating-star {
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .star-number {
+        width: 20%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .testimonial {
+        width: 80%;
+    }
+
+    .container-star {
+        max-width: 100%;
+    }
+
+    .rating-star {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .star-number {
+        width: 10%;
+    }
+
+    .rating-star {
+        justify-content: center;
+    }
+
+    .star-number {
+        width: 20%;
+    }
+}
