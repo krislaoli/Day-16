@@ -38,9 +38,8 @@
 }
 
 .container-card {
-
-  /* background-color: #FFF2D8 !important; */
-  background-image: url("https://www.wallpapertip.com/wmimgs/79-792058_lime-green-and-black-wallpaper-3-desktop-background.jpg");
+  background-color: #8f8f8f !important;
+  /* background-image: url("https://www.wallpapertip.com/wmimgs/79-792058_lime-green-and-black-wallpaper-3-desktop-background.jpg"); */
   background-size: cover;
 }
 
@@ -83,7 +82,7 @@
 }
 
 .container-card .container-card-content {
-  margin: 100px 100px !important;
+  margin: 80px 80px !important;
 }
 
 .card .btn .text-light {
@@ -180,6 +179,25 @@
   background-color: #113946;
 }
 
+@media (min-width: 1024px) {
+  .container-card {
+    height: 94vh !important;
+  }
+
+}
+
+/* Desktop and Larger Screens */
+@media (min-max: 1200px) {
+  .card-title {
+    font-size: 32px;
+  }
+
+
+  .card-text {
+    font-size: 18px;
+  }
+}
+
 @media only screen and (max-width: 900px) {
 
   /* landing page */
@@ -208,6 +226,31 @@
     grid-template-columns: auto auto auto auto;
   }
 }
+
+@media only screen and (min-max: 768px) {
+  .container-card {
+    flex-direction: row;
+  }
+
+  .container-card-content {
+    justify-content: space-between;
+  }
+
+  .card-list-content {
+    flex-direction: row;
+  }
+
+  .card-body {
+    flex: 1;
+    padding: 0 20px;
+  }
+
+  .card-profile {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
 
 @media only screen and (max-width: 550px) {
 
@@ -241,3 +284,5 @@
     width: 100% !important;
   }
 }
+
+
